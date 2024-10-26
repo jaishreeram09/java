@@ -1,0 +1,24 @@
+public class Exp93 {
+    public static void main(String[] args)
+    {
+        String s1 = new String("Java Programming.");
+        String s2 = new String("Java Programing.");
+        boolean result = s1.equals(s2);
+        System.out.println("S1 and S2 are equal. "+result);
+        int lens1 = s1.length();
+        System.out.println("No. of characters in s1 = "+lens1);
+        String s3 = new String("Cricket Fandom");
+        String s4 = s3.replace('c','v');
+        System.out.println("New String is :"+s4);
+        int char5 = s3.charAt(7);
+        System.out.println("Character position 5 = "+char5);
+        String s5 = new String();
+        s5 = s3.toUpperCase();
+        System.out.println("s3 in upper case = "+s5);
+        String s6 = "Rohit";
+        String s7 = "Sharma";
+        System.out.println(s6.concat(s7));
+        int index = s3.indexOf('e');
+        System.out.println("Index of e = "+index);
+    }
+}
