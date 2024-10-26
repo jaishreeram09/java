@@ -1,0 +1,33 @@
+class Box
+{
+    double width, heigth, depth;
+    Box (double w, double h, double d)
+    {
+        width = w;
+        heigth = h;
+        depth = d;
+    }
+    Box()
+    {
+        width = heigth = depth = 0;
+    }
+    Box(double len)
+    {
+        width = heigth = depth = len;
+    }
+    double volume()
+    {
+        return width * heigth * depth;
+    }
+}
+public class Exp83 {
+    public static void main(String [] args)
+    {
+        Box b1 = new Box(18,7,45);
+        Box b2 = new Box();
+        Box b3 = new Box(10);
+        System.out.println("Voulme of box 1 = "+b1.volume());
+        System.out.println("Voulme of box 2 = "+b2.volume());
+        System.out.println("Voulme of box 3 = "+b3.volume());
+    }
+}
