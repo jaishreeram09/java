@@ -1,0 +1,22 @@
+class overloading
+{
+    double Area(double r)
+    {
+        return r*r*3.14; 
+    }
+    double Area(double h, double b)
+    {
+        return 0.5*h*b; 
+    }
+}
+public class Exp91{
+    public static void main(String[] args)
+    {
+        overloading object1 = new overloading();
+        double r = 18.1;
+        double area = object1.Area(r);
+        System.out.println("Area of circle = "+area);
+        double base = 10.5, heigth = 7.5, areaT;
+        areaT = object1.Area(base,heigth);
+        System.out.println("Area of triangle = "+areaT);
+    }}
