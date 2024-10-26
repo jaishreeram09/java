@@ -1,0 +1,17 @@
+public class Exp10_1 
+{
+    public static void main(String[] args)
+    {
+        programmer p1 = new programmer();
+        System.out.println("Salary of programmer: "+p1.salary);
+        System.out.println("Bonu: "+p1.bonus);
+    }
+}
+    class employee
+    {
+        double salary = 100000;
+    }
+    class programmer extends employee
+    {
+        int bonus = 1000;
+    }
