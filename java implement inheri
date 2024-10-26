@@ -1,0 +1,34 @@
+// Define the interface
+interface Animal {
+    // Method declaration (abstract method)
+    void sound();
+}
+
+// Class Dog implements the Animal interface
+class Dog implements Animal {
+    // Provide implementation of sound method for Dog
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Class Cat implements the Animal interface
+class Cat implements Animal {
+    // Provide implementation of sound method for Cat
+    public void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+// Main class to test the interface implementation
+public class InterfaceExample {
+    public static void main(String[] args) {
+        // Create instances of Dog and Cat
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+
+        // Call the sound method
+        myDog.sound(); // Output: Dog barks
+        myCat.sound(); // Output: Cat meows
+    }
+}
