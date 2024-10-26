@@ -1,0 +1,41 @@
+class BasCalculator
+{
+    int add;
+    void addition(int x,int y)
+    {
+        add = x + y;
+        System.out.println("Addition of two numbers = "+add);
+    }
+    int sub;
+    void subtraction(int x,int y)
+    {
+        sub = x - y;
+        System.out.println("Subtraction of two numbers = "+sub);
+    }
+}
+class AdvCalculator extends BasCalculator
+{
+    int mul;
+    void multiplication(int x,int y)
+    {
+        mul = x * y;
+        System.out.println("Multiplication of two numbers = "+mul);
+    }
+    float div;
+    void division(int x,int y)
+    {
+        sub = x / y;
+        System.out.println("Division of two numbers = "+div);
+    }
+}
+class Calculator extends AdvCalculator
+{
+    public static void main(String[] args)
+    {
+        Calculator c1 = new Calculator();
+        c1.addition(18,45);
+        c1.subtraction(45,18);
+        c1.multiplication(7,10);
+        c1.division(10,7);
+    }
+}
