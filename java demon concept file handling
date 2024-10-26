@@ -1,0 +1,28 @@
+import java.io.File;
+
+public class FileHandlingDemo {
+    public static void main(String[] args) {
+        // Specify the file path
+        File file = new File("example.txt");
+
+        // Check if the file exists
+        if (file.exists()) {
+            // Display file name
+            System.out.println("File Name: " + file.getName());
+
+            // Display absolute path
+            System.out.println("Absolute Path: " + file.getAbsolutePath());
+
+            // Check if the file is writable
+            System.out.println("Is file writable? " + file.canWrite());
+
+            // Check if the file is readable
+            System.out.println("Is file readable? " + file.canRead());
+
+            // Display file size in bytes
+            System.out.println("File Size in bytes: " + file.length());
+        } else {
+            System.out.println("The file does not exist.");
+        }
+    }
+}
